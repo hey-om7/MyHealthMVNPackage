@@ -9,26 +9,22 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>apps.oa.packages.myhealth</groupId>
-	<artifactId>MyHealth</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>myhealthmvnpackage</artifactId>
+	<version>0.0.9</version>
 	<name>MyHealth</name>
 	<description>Package for getting health details of current running machine</description>
-	<url/>
-	<licenses>
-		<license/>
-	</licenses>
-	<developers>
-		<developer/>
-	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+	<url>https://maven.apache.org</url>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub MyHealth Package</name>
+			<url>https://maven.pkg.github.com/hey-om7/MyHealthMVNPackage</url>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -55,12 +51,6 @@
 			<version>6.7.1</version>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub MyHealth Package</name>
-			<url>https://maven.pkg.github.com/yourusername/MyHealth</url>
-		</repository>
-	</distributionManagement>
+
 
 </project>

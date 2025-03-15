@@ -5,14 +5,14 @@ import com.sun.management.OperatingSystemMXBean;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import oshi.SystemInfo;
 import oshi.hardware.GlobalMemory;
 
 import java.io.File;
 import java.lang.management.ManagementFactory;
 
-@Service
+@Component
 @RequiredArgsConstructor
 @Getter
 public class MyHealthUtil {
